@@ -1,0 +1,499 @@
+
+*{  box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+    font-family: 'Raleway', sans-serif; 
+}
+
+.wrap{
+overflow: hidden;
+min-height: 100%;
+display: flex;
+flex-direction: column;         
+}
+
+.header{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);   
+}
+
+.content{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.eagle{
+    height: 100%; 
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%),url(../image/banner.png) no-repeat;
+    background-size: cover;
+    padding-bottom: 12.56rem; 
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    }
+
+    .menu_nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    
+.nav{    
+    display: flex;
+    align-items: center;
+    line-height: 1rem;
+    list-style:none;
+    }
+
+.nav li{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    width: 6.25rem;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    }
+
+.nav li a{
+    text-decoration: none; 
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;    
+}
+
+.menu_find{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_find_icon{
+    padding: 0 0.5rem;
+}
+
+.menu_hover:hover{
+    color:#F4BF87;
+    text-decoration: underline;
+}
+
+.icon_hover path {
+    fill:inherit;
+    /* stroke:inherit; */
+    /* stroke-width:inherit; */
+}
+
+.icon_hover:hover {
+    fill:#F4BF87;
+}
+
+.section_welcome{
+color: #FFFFFF;
+text-align: center;
+
+}
+
+.button_learn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23.125rem;
+    margin: 0 auto;
+    border: 0.25rem solid #FFFFFF;    
+    }
+
+    .button_learn a{
+        display: block;
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .button_learn:hover a{
+    color: #E4BE8D;
+       background: #fff; 
+       
+    }
+
+    .button_learn:active a{
+        background: #fff; 
+        color: #E4BE8D;     
+     }
+
+     .button_learn:active{
+        border: 0.25rem solid #E4BE8D; 
+     }
+
+.button_learn a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none; 
+    text-transform: uppercase;      
+}
+
+.line_header::before{
+content: '';
+display: inline-block;
+margin: 3rem 0 4.5rem 0;
+height: 4px;
+width: 100%;
+max-width: 10.625rem;
+text-align: center;
+background: #fff;
+}
+
+.creative{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4rem;  
+    padding-top: 11.06rem;
+}
+
+.welcome{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 9rem;
+    letter-spacing: 0.44rem;
+    text-transform: uppercase;
+    line-height: 11rem;
+    padding: 0 3rem;
+}
+
+.cursive{
+    text-align: center;
+    font-family: Kaushan Script;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 2.75rem;
+    padding-top: 4rem;
+}
+
+.text_title{
+position: relative;
+text-transform: uppercase;
+text-align: center;
+font-weight: 900;
+font-size: 2rem;
+line-height: 2.625rem;
+margin: 1.5rem 0 5rem 0;
+padding: 1rem 0 1rem 0;
+border: solid #95E1D3 1px;
+}
+
+.text_title::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:7rem;
+    height: 4px;
+    width: 100%;
+    max-width: 10.625rem;
+    text-align: center;
+    background: #F38281;
+    }
+
+
+.text{
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.31rem; 
+    text-align: center; 
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+
+.about_image{
+    display: flex;
+    min-width: 31.62%;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 6.75rem;
+     }
+
+.about_image_team{
+position: absolute;
+top:-0.625rem;
+left: -0.625rem;
+max-width: 31.62%;
+max-height: 26.5rem;
+height: 100%;
+width: 100%;
+text-align: center;
+display:flex;
+background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+flex-direction: column;
+align-items: center;
+justify-content: center;
+/* display:none; */
+}
+
+.about_image_team:hover{
+      
+}
+
+.about_image_team p{
+   text-transform: uppercase;
+   font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #FFF;
+}
+
+
+.about_image_empty{
+    
+    min-width: 31.62%;
+    background: #95E1D3;
+}
+
+.about_wrap{
+    background: #95E1D3;
+}
+
+.about_content{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.69rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+        
+}
+
+.about_content:first-child{
+    border-left: 1px #FFF solid;
+}
+
+.about_content>div{
+    width: 20%;
+    padding:4.8rem 0; 
+    border-right: 1px rgb(255, 255, 255) solid;
+     }
+
+.about_text{
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+      }
+
+.about_content p{
+    text-align: center;      
+}
+
+/* .we_work{
+margin: 4rem auto;
+} */
+
+.work_with{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.work_with_name{
+    display: inherit;
+    flex-basis: 33.333%;
+}
+
+.h3{
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1.5rem;
+line-height: 1.17rem;
+padding: 0.81rem 0;
+
+}
+
+.work_with_name_text{
+padding: 0.625rem 0;
+font-size: 1.125rem;
+line-height: 1.32rem;
+ }
+ 
+ .work_with>div{
+    margin-top:4rem;
+ }
+.work_with_name img{
+    padding-right:2rem;
+ }
+
+ .design{
+    height: 100%;
+    background: url(../image/design.png) no-repeat;
+    background-size: cover;
+    
+     }
+
+.image_design{    
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    bottom:0px;
+    transform: translateX(-50%);
+    width: 69%;
+    max-height: 100%; 
+    margin-bottom: 3.56rem;       
+    }
+
+.image_design_under{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.image_design_under img{
+    width: 100%;
+    object-fit: cover;    
+}
+
+.image_design_in{
+    position: absolute;
+    width: 94%;
+    top: 5%;
+    left: 3%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.image_design_in img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.image_design_mobile{
+    position: absolute;
+    width: 100%;
+    top: 42%;
+    left: 77%;
+    z-index: 3;
+  }
+
+  .image_design_mobile img{
+    width: 29%;
+    object-fit: cover;
+  }
+
+.wtatwedo__content{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.wtatwedo__photo{
+    flex-basis: 48.7%;
+}
+
+.wtatwedo__menu{
+    flex-basis: 48.7%;
+}
+
+.wtatwedo__photo img{
+object-fit: cover;
+width: 100%;
+}
+
+.wtatwedo__menuitem{
+    display: flex;
+    padding: 1.375rem;
+    border: 1px solid #C6CBCD;
+    margin-top: 1.375rem;
+}
+
+.wtatwedo__menuitem:first-child{
+   margin-top: 0;
+}
+
+.wtatwedo__menuicon{
+    padding-right:3rem;
+}
+
+.wtatwedo__menutext{
+    border: 1px solid #C6CBCD;
+    border-top: none;
+    padding: 1.375rem 5.3rem 1.375rem 1.375rem;
+    max-height: 10rem;
+    overflow: auto;
+}
+
+.quote__wrap{
+    background: #F8F8F8;
+    margin-top: 7.125rem;
+}
+.wtatwedo__quote{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.quote__image{
+display: flex;
+align-items: center;
+position: relative;
+margin-right: 2rem;
+
+}
+
+.quote__imagein{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:50%;
+    transform: translateY(-50%);
+    border: 1px solid #95E1D3;
+   
+}
+
+.quote__text{
+    font-family: Raleway;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    
+}
+
+.quote__name{
+padding-top: 2rem;
+text-align: start;
+}
+
+.icon_social{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.team__text{
+text-transform: uppercase;
+font-size: 1.125rem;
+font-weight: 400;
+line-height: 1.31rem;
+text-align: center;
+vertical-align: middle;
+}
+
+.text_center{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
