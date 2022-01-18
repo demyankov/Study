@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  background: rgb(21, 24, 221);
+  /* min-height: 40vh; */
+  min-height: 100%;
+}
+
+.flex_item {
+  flex: 1;
+  background: rgb(224, 29, 143);
+  padding: 30px 30px;
+  min-height: 100%;
+  flex-basis: 45%;
+  /* border: 1px solid #eee; */
+  /* margin: 5px 5px; */
+  gap: 5px;
+  text-align: center;
+}
+
+.flex_item {
+  margin: 20px;
+}
