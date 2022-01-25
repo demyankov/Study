@@ -1,0 +1,43 @@
+
+
+  .container1>ul>li{
+      color: rgb(226, 14, 14);
+  }
+
+  .container2 span:nth-last-child(2){
+    color: rgb(226, 14, 14);
+  }
+
+  .container2 span:nth-of-type(1) {
+    color: rgb(88, 14, 226);
+  }
+
+  .container3 div span:nth-child(even) {
+    color: rgb(226, 14, 14);
+  }
+
+  .container4 div span:nth-child(4n+3){
+    color: rgb(226, 14, 14);
+  }
+
+  .container5 span:nth-last-child(3){
+    color: rgb(226, 14, 14);
+  }
+
+  .container6 span:nth-child(-n+3),
+  .container6 span:nth-last-child(-n+3){
+    color: rgb(226, 14, 14);
+  }
+
+  .container7 button:first-of-type,
+  .container7 button:last-of-type{
+    color: rgb(226, 14, 14); 
+  }
+
+  .container8 :not(.no-color) {
+    color: rgb(226, 14, 14); 
+  }
+
+  .container9 [color="red"] {
+    color: rgb(226, 14, 14); 
+  }

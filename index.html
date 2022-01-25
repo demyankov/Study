@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoGo</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
       <header>
@@ -20,14 +19,15 @@
         </div>
             <nav class="menu_nav">
            <ul  class="nav">
-                <li><a class="menu_hover" href="./index.html">about</a></li>
-                <li><a class="menu_hover" href="">service</a></li>
-                <li><a class="menu_hover" href="">work</a></li>
-                <li><a class="menu_hover" href="">blog</a></li>
-                <li><a class="menu_hover" href="">contact</a></li>
+                <li class="menu_hover"><a href="./index.html">about</a></li>
+                <li class="menu_hover"><a href="">service</a></li>
+                <li class="menu_hover"><a href="">work</a></li>
+                <li class="menu_hover"><a href="">blog</a></li>
+                <li class="menu_hover"><a href="">contact</a></li>
             </ul>
             <div class="menu_find">
-            <div class="menu_find_icon"><a href=""></a>
+            <div class="menu_find_icon">
+                <button type="button">
                 <svg class="icon_hover" width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.39 15.3101H12.2C12.0674 15.3101 11.9402 15.2574 11.8465 15.1636C11.7527 15.0698 11.7 14.9427 11.7 14.8101C11.7 14.6775 11.7527 14.5503 11.8465 14.4565C11.9402 14.3627 12.0674 14.3101 12.2 14.3101H16.39C16.5226 14.3101 16.6498 14.3627 16.7436 14.4565C16.8373 14.5503 16.89 14.6775 16.89 14.8101C16.89 14.9427 16.8373 15.0698 16.7436 15.1636C16.6498 15.2574 16.5226 15.3101 16.39 15.3101Z" fill="white"/>
                     <path d="M19.21 15.0001C19.1508 15.0142 19.0892 15.0142 19.03 15.0001C18.9684 14.9779 18.9118 14.9436 18.8637 14.8992C18.8156 14.8547 18.7768 14.8011 18.7498 14.7414C18.7228 14.6817 18.708 14.6172 18.7063 14.5518C18.7046 14.4863 18.7161 14.4211 18.74 14.3601L21.12 8.00014C21.1671 7.87735 21.2607 7.77805 21.3805 7.72377C21.5003 7.66949 21.6366 7.66459 21.76 7.71014C21.8837 7.75945 21.9838 7.85436 22.0397 7.9753C22.0955 8.09624 22.1027 8.23399 22.06 8.36014L19.68 14.6901C19.6397 14.7815 19.5739 14.8593 19.4906 14.9143C19.4072 14.9692 19.3098 14.999 19.21 15.0001V15.0001Z" fill="white"/>
@@ -35,14 +35,17 @@
                     <path d="M10.54 19.6899C9.9467 19.6899 9.36668 19.514 8.87333 19.1844C8.37998 18.8547 7.99546 18.3862 7.7684 17.838C7.54134 17.2898 7.48193 16.6866 7.59768 16.1047C7.71344 15.5227 7.99916 14.9882 8.41872 14.5686C8.83828 14.1491 9.37283 13.8633 9.95477 13.7476C10.5367 13.6318 11.1399 13.6912 11.6881 13.9183C12.2363 14.1454 12.7048 14.5299 13.0344 15.0232C13.3641 15.5166 13.54 16.0966 13.54 16.6899C13.54 17.4856 13.224 18.2487 12.6614 18.8113C12.0988 19.3739 11.3357 19.6899 10.54 19.6899V19.6899ZM10.54 14.6899C10.1445 14.6899 9.7578 14.8072 9.4289 15.027C9.1 15.2468 8.84366 15.5591 8.69228 15.9246C8.54091 16.29 8.5013 16.6922 8.57847 17.0801C8.65564 17.4681 8.84612 17.8245 9.12583 18.1042C9.40553 18.3839 9.7619 18.5743 10.1499 18.6515C10.5378 18.7287 10.94 18.6891 11.3054 18.5377C11.6709 18.3863 11.9832 18.13 12.203 17.8011C12.4227 17.4722 12.54 17.0855 12.54 16.6899C12.54 16.1595 12.3293 15.6508 11.9543 15.2757C11.5792 14.9007 11.0705 14.6899 10.54 14.6899Z" fill="white"/>
                     <path d="M18.05 19.6899C17.4566 19.6899 16.8766 19.514 16.3833 19.1844C15.8899 18.8547 15.5054 18.3862 15.2784 17.838C15.0513 17.2898 14.9919 16.6866 15.1076 16.1047C15.2234 15.5227 15.5091 14.9882 15.9287 14.5686C16.3482 14.1491 16.8828 13.8633 17.4647 13.7476C18.0467 13.6318 18.6499 13.6912 19.198 13.9183C19.7462 14.1454 20.2148 14.5299 20.5444 15.0232C20.874 15.5166 21.05 16.0966 21.05 16.6899C21.05 17.4856 20.7339 18.2487 20.1713 18.8113C19.6087 19.3739 18.8456 19.6899 18.05 19.6899V19.6899ZM18.05 14.6899C17.6544 14.6899 17.2677 14.8072 16.9388 15.027C16.61 15.2468 16.3536 15.5591 16.2022 15.9246C16.0509 16.29 16.0112 16.6922 16.0884 17.0801C16.1656 17.4681 16.3561 17.8245 16.6358 18.1042C16.9155 18.3839 17.2718 18.5743 17.6598 18.6515C18.0478 18.7287 18.4499 18.6891 18.8154 18.5377C19.1808 18.3863 19.4932 18.13 19.7129 17.8011C19.9327 17.4722 20.05 17.0855 20.05 16.6899C20.05 16.1595 19.8393 15.6508 19.4642 15.2757C19.0891 14.9007 18.5804 14.6899 18.05 14.6899Z" fill="white"/>
                     </svg>
-                </a></div>
-                <div class="menu_find_icon"></div><a href="">
+                </button>
+               
+            </div>
+                <div class="menu_find_icon">
+                    <button type="button">
                     <svg class="icon_hover" width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.74998 17C8.31521 17 6.91271 16.5743 5.72002 15.7768C4.52733 14.9792 3.5981 13.8457 3.04996 12.5198C2.50181 11.1939 2.35941 9.73513 2.64078 8.32823C2.92215 6.92132 3.61463 5.62953 4.63056 4.6164C5.6465 3.60327 6.94019 2.91436 8.34787 2.63688C9.75555 2.3594 11.2139 2.50583 12.5383 3.05763C13.8627 3.60944 14.9936 4.5418 15.7879 5.73668C16.5821 6.93157 17.0039 8.33524 17 9.77C16.992 11.6885 16.225 13.5259 14.8665 14.8807C13.508 16.2354 11.6685 16.9974 9.74998 17V17ZM9.74998 3.5C8.5147 3.50001 7.30712 3.86607 6.27975 4.55195C5.25238 5.23782 4.4513 6.21276 3.97767 7.35364C3.50404 8.49451 3.3791 9.75015 3.61864 10.962C3.85819 12.1738 4.45146 13.2875 5.32354 14.1624C6.19561 15.0372 7.30739 15.6341 8.51845 15.8775C9.72951 16.1209 10.9855 16 12.1279 15.53C13.2703 15.06 14.2478 14.262 14.937 13.2369C15.6261 12.2117 15.996 11.0053 16 9.77C16 8.1124 15.3415 6.52269 14.1694 5.35059C12.9973 4.17848 11.4076 3.52 9.74998 3.52V3.5Z" fill="white"/>
                         <path d="M21 21.5199C20.9344 21.5207 20.8694 21.5078 20.8091 21.4819C20.7488 21.4561 20.6946 21.4179 20.65 21.3699L14.17 14.8899C14.0772 14.7971 14.025 14.6712 14.025 14.5399C14.025 14.4086 14.0772 14.2827 14.17 14.1899C14.2628 14.0971 14.3887 14.0449 14.52 14.0449C14.6513 14.0449 14.7772 14.0971 14.87 14.1899L21.35 20.6699C21.3978 20.7148 21.436 20.769 21.462 20.8292C21.4881 20.8894 21.5015 20.9543 21.5015 21.0199C21.5015 21.0855 21.4881 21.1504 21.462 21.2106C21.436 21.2708 21.3978 21.325 21.35 21.3699C21.3054 21.4179 21.2511 21.4561 21.1909 21.4819C21.1306 21.5078 21.0656 21.5207 21 21.5199V21.5199Z" fill="white"/>
-                        </svg>
-                        
-                </a></div>
+                        </svg>                        
+                    </button>
+            </div>
             </div>
         </nav>
        </div>
@@ -50,14 +53,16 @@
     
     </header>
     <main>
-      <section class="eagle"></div>
+      <section class="eagle">
         <div class="section_welcome content">
             <p class="creative">Creative Template</p>
             <h1 class="welcome">Welcome to MoGo</h1>
             <div class="line_header">
-            <div class="button_learn">
+            <div class="btn">
+                <div class="button-learn button-learn_margin">
                 <a href="#">learn more</a>
             </div>
+        </div>
         </div>
         </div>
       </section>
@@ -66,24 +71,44 @@
     <div>
         <p class="cursive">What we do</p>
         <h2 class="text_title">story about us</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
+        <p class="text text_position">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
 </div>
     
-    <div class="about_image">
-        <div class="about_image_team">
-            <div><img src="./image/icons_about.svg" alt="image"></div>
-                <p>Super team</p>    
+    <div class="about-image">
+        <div class="about-imagewrap">            
+            <img src="./image/About_0.png" alt="image">       
+        <div class="about-image_team">            
+            <div>
+                <img src="./image/icons_about.svg" alt="image">
             </div>
-    <div class="about_image_empty">
-  
+            <p>Super team</p>    
+        </div>
     </div>
-    <div>
+       
+    <div class="about-imagewrap">
+        
         <img src="./image/About_1.png" alt="image">
+      
+    <div class="about-image_team">            
+        <div>
+            <img src="./image/icons_about.svg" alt="image">
+        </div>
+        <p>Super team</p>    
     </div>
-    <div>
+</div>
+    <div class="about-imagewrap">
+        
         <img src="./image/About_2.png" alt="image">
+    
+    
+    <div class="about-image_team">            
+        <div>
+            <img src="./image/icons_about.svg" alt="image">
+        </div>
+        <p>Super team</p>    
     </div>
-
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -123,8 +148,8 @@
                     <img src="./image/work_with_1.svg" alt="image">
                 </div>
                 <div>
-                    <h3 class ="h3">photography</h3>
-                    <p class ="work_with_name_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class ="text_h3">photography</h3>
+                    <p class ="text text_position text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="work_with_name">
@@ -132,8 +157,8 @@
                     <img src="./image/work_with_2.svg" alt="image">
                 </div>
                 <div>
-                    <h3 class ="h3">web design</h3>
-                    <p class ="work_with_name_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class ="text_h3">web design</h3>
+                    <p class ="text text_position text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="work_with_name">
@@ -141,8 +166,8 @@
                     <img src="./image/work_with_3.svg" alt="image">
                 </div>
                 <div>
-                    <h3 class ="h3">creativity</h3>
-                    <p class ="work_with_name_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class ="text_h3">creativity</h3>
+                    <p class ="text text_position text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="work_with_name">
@@ -150,8 +175,8 @@
                     <img src="./image/work_with_4.svg" alt="image">
                 </div>
                 <div>
-                    <h3 class ="h3">seo</h3>
-                    <p class ="work_with_name_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class ="text_h3">seo</h3>
+                    <p class ="text text_position text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="work_with_name">
@@ -159,8 +184,8 @@
                     <img src="./image/work_with_5.svg" alt="image">
                 </div>
                 <div>
-                    <h3 class ="h3">css/html</h3>
-                    <p class ="work_with_name_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class ="text_h3">css/html</h3>
+                    <p class ="text text_position text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="work_with_name">
@@ -168,8 +193,8 @@
                     <img src="./image/work_with_6.svg" alt="image">
                 </div>
                 <div>
-                    <p class ="h3">digital</p>
-                    <p class ="work_with_name_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class ="text_h3">digital</p>
+                    <p class ="text text_position text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
 
@@ -205,7 +230,7 @@
     <div>
         <p class="cursive">Service</p>
         <h2 class="text_title">what we do</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
+        <p class="text text_position">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
     </div>
     <div class="wtatwedo__content">
         <div class="wtatwedo__photo">
@@ -217,7 +242,7 @@
                 <div class="wtatwedo__menuicon">
                     <img src="./image/Whatwedo_icon1.svg" alt="glasses">
                 </div>
-                <h3 class="h3">photography</h3>
+                <h3 class="text_h3">photography</h3>
          </div>
         <div class="wtatwedo__menutext">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.</p>
@@ -226,13 +251,13 @@
             <div class="wtatwedo__menuicon">
                 <img src="./image/Whatwedo_icon2.svg" alt="circle">
             </div>
-            <h3 class="h3"> creativity</h3>
+            <h3 class="text_h3"> creativity</h3>
         </div>
         <div class="wtatwedo__menuitem">
             <div class="wtatwedo__menuicon">
                 <img src="./image/Whatwedo_icon3.svg" alt="icon">
             </div>
-            <h3 class="h3">web design</h3>
+            <h3 class="text_h3">web design</h3>
             </div>
     </div>
   </div>
@@ -258,7 +283,7 @@
     <div>
         <p class="cursive">Who we are</p>
         <h2 class="text_title">meet our team</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
+        <p class="text text_position">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
     </div>
     <div class="about_image">
         <div class="about_image_team">
@@ -275,33 +300,255 @@
             <source media="(min-width: 992px)" srcset="./image/team1.png">
             <img src="./image/team1.png" alt="team">
         </picture>
-        <h3 class="h3 text_center"> Kadin Dias</h3>
-        <p class="team__text">founder, ceo</p>
+        <h3 class="text_h3 text_center"> Kadin Dias</h3>
+        <h4 class="text_h4">founder, ceo</h4>
       </div>
     <div>
         <img src="./image/team2.png" alt="team">
-        <h3 class="h3 text_center"> Zain Calzoni</h3>
-        <p class="team__text">designer</p>
+        <h3 class="text_h3 text_center"> Zain Calzoni</h3>
+        <h4 class="text_h4">designer</h4>
     </div>
     <div>
         <img src="./image/team3.png" alt="team">
-        <h3 class="h3 text_center"> Charlie George</h3>
-        <p class="team__text">photographer</p>
+        <h3 class="text_h3 text_center"> Charlie George</h3>
+        <h4 class="text_h4">photographer</h4>
     </div>
 
 </div>
 </div>
 
+
+<div class="section_vector">
+<div class="content vector">
+    <div>
+    <img src="./image/Vector_1.svg" alt="Vector">
+</div>
+<div>
+    <img src="./image/Vector_2.svg" alt="Vector">
+</div>
+<div>
+    <img src="./image/Vector_3.svg" alt="Vector">
+</div>
+<div>
+    <img src="./image/Vector_4.svg" alt="Vector">
+</div>
+<div>
+    <img src="./image/Vector_5.svg" alt="Vector">
+</div>
+<div>
+    <img src="./image/Vector_6.svg" alt="Vector">
+</div>
+</div>
+</div>
 </section>
 
+<section>
+        <div class="content">
+            <p class="cursive">What we do</p>
+            <h2 class="text_title">some of our work</h2>
+            <p class="text text_position">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
+        </div>
+      
+    <div class="gallery">
+        <div class="gallery__item"><img src="./image/gallery_1.png" alt="photo gallery"></div>
+         <div class="gallery__item"><img src="./image/gallery_2.png" alt="photo gallery"></div>
+         <div class="gallery__item gallery__item3"><img src="./image/gallery_3.png" alt="photo gallery"></div>
+         <div class="gallery__item"><img src="./image/gallery_4.png" alt="photo gallery"></div>
+         <div class="gallery__item"><img src="./image/gallery_5.png" alt="photo gallery"></div>
+         <div class="gallery__item"><img src="./image/gallery_6.png" alt="photo gallery"></div>
+         <div class="gallery__item"><img src="./image/gallery_8.png" alt="photo gallery"></div>
+    </div>
 
+         <div class="quote__wrap quote_background">
+            <div class="wtatwedo__quote content"> 
+              <div class="quote__image image_radius">
+                  <img src="./image/james.png" alt="quote">
+               </div>
+              <div class="quote">
+                  <blockquote class="quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</blockquote>
+                  <div>
+                      <p class="cursive quote__name">James Philips</p>
+                  </div>
+              </div>   
+            </div> 
+        </div>
+    </section>
 
+            <section class="section_people">
+            <div class="section_wrap">
+                <div class="content">
+                    <div>
+                    <p class="cursive">Happy Clients</p>
+                    <h2 class="text_title">what people say</h2>
+                </div>
+                <div class="people">
+                    <div class="people_wrap">
+                        <div class="people_item">
+                            <div class="people_img">
+                                <img src="./image/people_1.png" alt="man">
+                            </div>
+                            <div>
+                                <h3 class="text_h3">Phillip Culhane</h3>
+                                <h4 class="text_h4 text_left">photographer</h4>
+                                <p class="text text_position text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+                            </div>
+                        </div> 
+                        <div class="people_item">
+                            <div class="people_img">
+                                <img src="./image/people_2.png" alt="man">
+                            </div>
+                            <div>
+                                <h3 class="text_h3">Dulce Gouse</h3>
+                                <h4 class="text_h4 text_left">photographer</h4>
+                                <p class="text text_position text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="people_wrap">
+                        <div class="people_item">
+                            <div class="people_img">
+                                <img src="./image/people_3.png" alt="man">
+                            </div>
+                            <div>
+                                <h3 class="text_h3">Paityn Press</h3>
+                                <h4 class="text_h4 text_left text_padding">photographer</h4>
+                                <p class="text text_position text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+                            </div>
+                        </div> 
+                        <div class="people_item">
+                            <div class="people_img">
+                                <img src="./image/people_4.png" alt="man">
+                            </div>
+                            <div>
+                                <h3 class="text_h3">Zaire Schleifer</h3>
+                                <h4 class="text_h4 text_left">photographer</h4>
+                                <p class="text text_position text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="content latest-blog">
+            <div>
+                <p class="cursive">Our Stories</p>
+                <h2 class="text_title">Latest blog</h2>
+            </div>
+           <div class="latest-gallery">
+            <div class="latest-gallery__item">
+                <div class="latest-gallery__image-wrap">
+                    <img class="latest-gallery__image" src="./image/Latest.png" alt="latest image">
+                    <div class="latest-gallery__date">
+                        <h3 class="latest-gallery_h3">15</h3>
+                        <h4 class="latest-gallery_h4">jan</h4> 
+                     </div>
+                </div>
+                <h3 class="text_h3 latest-gallery_padding">Lorem ipsum dolor sit amet</h3>
+                <p class="text text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+                <div class="latest-gallery_statistics">
+                    <div class="latest-gallery__shows">
+                        <img class="latest-gallery__icon" src="./image/icon-shows.svg" alt="icon-shows">
+                        <p class="latest-gallery_number">542</p>
+                    </div>
+                    <div class="latest-gallery__messages">
+                        <img class="latest-gallery__icon" src="./image/icon-messages.svg" alt="icon-messages">
+                        <p class="latest-gallery_number">17</p>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-gallery__item">
+                <div class="latest-gallery__image-wrap">
+                    <img class="latest-gallery__image" src="./image/Latest.png" alt="latest image">
+                    <div class="latest-gallery__date">
+                        <h3 class="latest-gallery_h3">15</h3>
+                        <h4 class="latest-gallery_h4">jan</h4> 
+                     </div>
+                </div>
+                <h3 class="text_h3 latest-gallery_padding">Lorem ipsum dolor sit amet</h3>
+                <p class="text text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+                <div class="latest-gallery_statistics">
+                    <div class="latest-gallery__shows">
+                        <img class="latest-gallery__icon" src="./image/icon-shows.svg" alt="icon-shows">
+                        <p class="latest-gallery_number">542</p>
+                    </div>
+                    <div class="latest-gallery__messages">
+                        <img class="latest-gallery__icon" src="./image/icon-messages.svg" alt="icon-messages">
+                        <p class="latest-gallery_number">17</p>
+                    </div>
+                </div>
+            </div><div class="latest-gallery__item">
+                <div class="latest-gallery__image-wrap">
+                    <img class="latest-gallery__image" src="./image/Latest.png" alt="latest image">
+                    <div class="latest-gallery__date">
+                        <h3 class="latest-gallery_h3">15</h3>
+                        <h4 class="latest-gallery_h4">jan</h4> 
+                     </div>
+                </div>
+                <h3 class="text_h3 latest-gallery_padding">Lorem ipsum dolor sit amet</h3>
+                <p class="text text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+                <div class="latest-gallery_statistics">
+                    <div class="latest-gallery__shows">
+                        <img class="latest-gallery__icon" src="./image/icon-shows.svg" alt="icon-shows">
+                        <p class="latest-gallery_number">542</p>
+                    </div>
+                    <div class="latest-gallery__messages">
+                        <img class="latest-gallery__icon" src="./image/icon-messages.svg" alt="icon-messages">
+                        <p class="latest-gallery_number">17</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="latest__footer">
+        <div>
+        <div class="content">
+            <div>
+                <div class="latest__icon">
+                    <img src="./image/icon-latest.svg" alt="icon">
+                </div>
+                <h2 class="text_title latest_h2">Latest blog</h2>
+            </div>
+        </div>
+    </div>
+        </section>
        </main>
-    <footer class="footer">
-        <!-- <svg class="icon-youtube" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">  -->
-            
-<p>Copyright © 2021 mogo. All Rights Reserved</p>
-    </footer>
-  
+
+       <footer>
+        <div>
+            <svg width="141" height="38" viewBox="0 0 141 38" fill="#C6CBCD" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.1023 37.4759V15.3048L21.1512 31.4483H16.474L8.52283 15.3048V37.4759H0V0.262069H9.25038L18.8126 19.7076L28.4267 0.262069H37.6252V37.4759H29.1023Z" fill="#C6CBCD"/>
+                <path d="M56.5709 38C53.4528 38 50.8024 37.3361 48.6197 36.0083C46.4717 34.6805 44.826 32.9333 43.6827 30.7669C42.5394 28.6005 41.9678 26.2593 41.9678 23.7435C41.9678 21.1926 42.5394 18.834 43.6827 16.6676C44.826 14.5012 46.489 12.754 48.6717 11.4262C50.8544 10.0984 53.4874 9.43448 56.5709 9.43448C59.6544 9.43448 62.2874 10.0984 64.4701 11.4262C66.6528 12.754 68.3158 14.5012 69.4591 16.6676C70.6024 18.834 71.174 21.1926 71.174 23.7435C71.174 26.2593 70.6024 28.6005 69.4591 30.7669C68.3158 32.9333 66.6528 34.6805 64.4701 36.0083C62.2874 37.3361 59.6544 38 56.5709 38ZM50.4906 23.7435C50.4906 25.8749 51.0622 27.6046 52.2056 28.9324C53.3835 30.2602 54.8386 30.9241 56.5709 30.9241C58.2685 30.9241 59.689 30.2602 60.8323 28.9324C62.0103 27.6046 62.5992 25.8749 62.5992 23.7435C62.5992 21.612 62.0103 19.8823 60.8323 18.5545C59.689 17.2267 58.2685 16.5628 56.5709 16.5628C54.8386 16.5628 53.3835 17.2267 52.2056 18.5545C51.0622 19.8823 50.4906 21.612 50.4906 23.7435Z" fill="#C6CBCD"/>
+                <path d="M91.6159 37.7379C89.1907 37.7379 86.9041 37.2837 84.7561 36.3752C82.6427 35.4317 80.7545 34.1214 79.0915 32.4441C77.4632 30.732 76.1813 28.7228 75.2458 26.4166C74.3451 24.0754 73.8947 21.4722 73.8947 18.6069C73.8947 16.0212 74.3451 13.6101 75.2458 11.3738C76.1813 9.13747 77.4805 7.16322 79.1435 5.45104C80.8411 3.73885 82.7986 2.41103 85.0159 1.46759C87.2679 0.489195 89.6931 0 92.2915 0C95.6868 0 98.6663 0.733795 101.23 2.20138C103.828 3.66897 105.769 5.64322 107.051 8.12414L100.71 12.9462C99.8789 11.3039 98.6663 10.011 97.0726 9.06759C95.4789 8.12414 93.7813 7.65241 91.9797 7.65241C90.1088 7.65241 88.4632 8.15908 87.0427 9.17241C85.6222 10.1508 84.5135 11.4961 83.7167 13.2083C82.9199 14.9205 82.5214 16.8248 82.5214 18.9214C82.5214 21.0529 82.9372 22.9747 83.7687 24.6869C84.6002 26.3641 85.7435 27.692 87.1986 28.6703C88.6883 29.6138 90.4033 30.0855 92.3435 30.0855C95.6694 30.0855 98.6663 28.548 101.334 25.4731V24.2676H94.1624V18.0303H108.402V37.4759H101.334V33.8069C98.5277 36.4276 95.2883 37.7379 91.6159 37.7379Z" fill="#C6CBCD"/>
+                <path d="M126.353 38C123.235 38 120.584 37.3361 118.402 36.0083C116.254 34.6805 114.608 32.9333 113.465 30.7669C112.321 28.6005 111.75 26.2593 111.75 23.7435C111.75 21.1926 112.321 18.834 113.465 16.6676C114.608 14.5012 116.271 12.754 118.454 11.4262C120.636 10.0984 123.269 9.43448 126.353 9.43448C129.436 9.43448 132.069 10.0984 134.252 11.4262C136.435 12.754 138.098 14.5012 139.241 16.6676C140.384 18.834 140.956 21.1926 140.956 23.7435C140.956 26.2593 140.384 28.6005 139.241 30.7669C138.098 32.9333 136.435 34.6805 134.252 36.0083C132.069 37.3361 129.436 38 126.353 38ZM120.272 23.7435C120.272 25.8749 120.844 27.6046 121.987 28.9324C123.165 30.2602 124.62 30.9241 126.353 30.9241C128.05 30.9241 129.471 30.2602 130.614 28.9324C131.792 27.6046 132.381 25.8749 132.381 23.7435C132.381 21.612 131.792 19.8823 130.614 18.5545C129.471 17.2267 128.05 16.5628 126.353 16.5628C124.62 16.5628 123.165 17.2267 121.987 18.5545C120.844 19.8823 120.272 21.612 120.272 23.7435Z" fill="#C6CBCD"/>
+                </svg>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus./p>
+                <p> <span>15k</span> followers</p>
+                <div>
+                    <p>Follow Us</p>
+                    <div>
+                        <a href="https://facebook.com" target="blank"><img src="./image/footer_fb.svg" alt="icon facebook"></a>
+                        <a href="https://twitter.com" target="blank"><img src="./image/footer_tw.svg" alt="icon twitter"></a>
+                        <a href="https://instagram.com" target="blank"><img src="./image/footer_inst.svg" alt="icon instagram"></a>
+                        <a href="https://pinterest.com" target="blank"><img src="./image/footer_pint.svg" alt="icon pinterest"></a>
+                        <a href="https://linkedin.com" target="blank"><img src="./image/footer_ld.svg" alt="icon linkedin"></a>
+                        <a href="https://youtube.com" target="blank"><img src="./image/footer_yt.svg" alt="icon youtube"></a>
+                        <a href="https://dribble.com" target="blank"><img src="./image/footer_dr.svg" alt="icon dribble"></a>
+                        <a href="https://tiktok.com" target="blank"><img src="./image/footer_tt.svg" alt="icon tiktok"></a>
+                    </div>
+                </div>
+                <form action="">
+                    <input type="text">
+                    <button type="submit">subscribe</button>
+                </form>
+                </div>
+                <div>
+                    <h3 class="text_h3">blogs</h3>
+                </div>
+        <div></div>
+        <p class="footer__copypight">Copyright © 2021 mogo. All Rights Reserved</p>
+       </footer>
+
 </body>
 </html>

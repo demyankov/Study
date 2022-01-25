@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./test.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container container1">
+        <h1>1. Изменить цвет текста прямых дочерних элементов списка</h1>
+        <ul>
+          <li>Текст должен быть красным</li>
+          <ul>
+            <li>Текст не должен измениться</li>
+            <li>Текст не должен измениться</li>
+          </ul>
+          <li>Текст должен быть красным</li>
+        </ul>
+      </div>
+      
+      <div class="container container2">
+        <h1>2. Изменить цвет текста соседнего элемента</h1>
+        <p>Текст, следующий прямо за этим блоком должен быть красным</p>
+        <span>Текст должен быть красным</span>
+        <span>Текст не должен измениться</span>
+      </div>
+      
+      <div class="container container3">
+        <h1>3. Изменить цвет текста четных элементов</h1>
+        <div>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+        </div>
+      </div>
+      
+      <div class="container container4">
+        <h1>4. Выбрать каждый 4-й элемент, начиная с 3-го</h1>
+        <div>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span>11</span>
+          <span>12</span>
+          <span>13</span>
+          <span>14</span>
+          <span>15</span>
+        </div>
+      </div>
+      
+      <div class="container container5">
+        <h1>5. Выбрать 3-й элемент с конца</h1>
+        <div>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+        </div>
+      </div>
+      
+      <div class="container container6">
+        <h1>6. Выбрать первые 3 элемента с начала и с конца (1,2,3 ... 8,9,10)</h1>
+        <div>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+        </div>
+      </div>
+      
+      <div class="container container7">
+        <h1>7. Выбрать первый/последний элемент типа button</h1>
+        <div>1</div>
+        <button>Текст должен быть красным</button>
+        <div>3</div>
+        <button>Текст не должен измениться</button>
+        <div>4</div>
+        <button>Текст должен быть красным</button>
+      </div>
+      
+      <div class="container container8">
+        <h1>8. Выбрать все элементы, которые не имеют класс 'no-color'</h1>
+        <div>Текст должен быть красным</div>
+        <div class="no-color">Текст не должен измениться</div>
+        <div>Текст должен быть красным</div>
+      </div>
+      
+      <div class="container container9">
+        <h1>9. Выбрать элемент, атрибут color у которого равен red</h1>
+        <div color="red">Текст должен быть красным</div>
+        <div color="">Текст не должен быть красным</div>
+      </div>
+</body>
+</html>
