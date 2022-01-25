@@ -252,12 +252,13 @@ button {
   position: relative;
   justify-content: space-between;
   margin-bottom: 6.75rem;
+  gap: 1.5rem;
 }
 
 .about-imagewrap {
   position: relative;
   height: 21.125rem;
-  max-width: calc(100% / 3);
+  flex-grow: 1;
 }
 
 .about-imagewrap::before {
