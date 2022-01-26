@@ -1,43 +1,49 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+.conteiner {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
-  .container1>ul>li{
-      color: rgb(226, 14, 14);
-  }
+.works {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 3rem;
+}
 
-  .container2 span:nth-last-child(2){
-    color: rgb(226, 14, 14);
-  }
+.works__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid;
+}
+.works__h1 {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.66px;
+  padding: 20px 0 10px 0;
+}
 
-  .container2 span:nth-of-type(1) {
-    color: rgb(88, 14, 226);
-  }
+.works__p {
+  margin-top: auto;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #546285;
+}
 
-  .container3 div span:nth-child(even) {
-    color: rgb(226, 14, 14);
-  }
-
-  .container4 div span:nth-child(4n+3){
-    color: rgb(226, 14, 14);
-  }
-
-  .container5 span:nth-last-child(3){
-    color: rgb(226, 14, 14);
-  }
-
-  .container6 span:nth-child(-n+3),
-  .container6 span:nth-last-child(-n+3){
-    color: rgb(226, 14, 14);
-  }
-
-  .container7 button:first-of-type,
-  .container7 button:last-of-type{
-    color: rgb(226, 14, 14); 
-  }
-
-  .container8 :not(.no-color) {
-    color: rgb(226, 14, 14); 
-  }
-
-  .container9 [color="red"] {
-    color: rgb(226, 14, 14); 
-  }
+.works__img {
+  width: 100%;
+  object-fit: cover;
+}
