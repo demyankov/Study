@@ -34,15 +34,13 @@ button {
 }
 
 .eagle {
-  /* height: 100%;  */
-  background: linear-gradient(
+    background: linear-gradient(
       360deg,
       rgba(237, 215, 137, 0.9) 0%,
       rgba(233, 130, 131, 0.9) 100%
     ),
     url(../image/banner.png) no-repeat;
-  background-size: cover;
-  /* padding-bottom: 12.56rem;  */
+  background-size: cover; 
 }
 
 /* ------ главное меню---------*/
@@ -114,8 +112,6 @@ button {
 
 .icon_hover path {
   fill: inherit;
-  /* stroke:inherit; */
-  /* stroke-width:inherit; */
 }
 
 .icon_hover:hover {
@@ -124,18 +120,18 @@ button {
 
 /* ------ section_welcome---------*/
 
-.section_welcome {
+.section-welcome {
   color: #ffffff;
   text-align: center;
 }
 
-.creative {
+.section-welcome_italic {
   font-family: "Kaushan Script", cursive;
   font-size: 4rem;
   padding-top: 11.06rem;
 }
 
-.welcome {
+.section-welcome_h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 9rem;
@@ -186,7 +182,7 @@ button {
   color: #e4be8d;
 }
 
-/* ------ линия над кнопкой---------*/
+/* ------LINE UNDER BUTTON---------*/
 
 .button-learn::after {
   content: "";
@@ -199,7 +195,7 @@ button {
   right: 6rem;
 }
 
-/* ------заголовки секций---------*/
+/* ------SECTION HEADER---------*/
 
 .cursive {
   text-align: center;
@@ -207,8 +203,11 @@ button {
   font-weight: 400;
   font-size: 1.875rem;
   line-height: 2.75rem;
-  padding-top: 4rem;
-}
+  }
+
+  .cursive_padding{
+    padding-top: 4rem;
+  }
 
 .text_title {
   position: relative;
@@ -246,6 +245,8 @@ button {
   padding-bottom: 1rem;
   text-align: center;
 }
+
+/* -----SECTION STORY ABOUT US -----------------*/
 
 .about-image {
   display: flex;
@@ -318,97 +319,106 @@ button {
   color: #fff;
 }
 
-.about_wrap {
+.section-about__statistics {
   background: #95e1d3;
 }
 
-.about_content {
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 4.69rem;
+.section-about__content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: #ffffff;
 }
 
-.about_content:first-child {
-  border-left: 1px #fff solid;
-}
-
-.about_content > div {
-  width: 20%;
-  padding: 4.8rem 0;
+.section-about__statistics__item {
+  flex: 1;
+  padding: 4.25rem 0 3.813rem 0;
   border-right: 1px rgb(255, 255, 255) solid;
 }
 
-.about_text {
+.section-about__statistics__item:first-child {
+  border-left: 1px #fff solid;
+}
+
+.section-about__statistics__item_h2{
+  text-align: center;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.69rem;
+  padding-bottom: 1.5rem;
+}
+
+.section-about__statistics__item_p {
+  text-align: center;
   font-size: 1.5rem;
   line-height: 1.75rem;
   font-weight: 400;
 }
+/* ------ SECTION WE WORK WITH ---------- */
 
-.about_content p {
-  text-align: center;
-}
-
-.work_with {
+.work-with {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 4rem;
+  justify-content: space-between;
+  row-gap: 4.875rem;
+  margin-bottom: 6.313rem;
 }
 
-.work_with_name {
-  display: inherit;
-  flex-basis: 33.333%;
+.work-with__item {
+  flex: 1;
+  display: flex; 
+  flex-basis: calc(100%/3);
 }
 
-.text_h3 {
+.work-with__item_padding {
+  padding-right: 0.5rem; 
+}
+
+.text__h3 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
-  line-height: 1.17rem;
-  padding: 0.81rem 0;
+  line-height: 1.17rem;  
+  }
+
+.text__h3_padding{
+  padding: 1.125rem 1rem 2.25rem 0;
 }
 
-.work_with > div {
-  margin-top: 4rem;
-}
-.work_with_name img {
-  padding-right: 2rem;
+.work-with__item img {
+  max-height: 3.5rem;
+  padding-right: 2.125rem;
 }
 
-.design {
-  height: 100%;
+/* -------- SECTION UNIQUE DESIGN---------- */
+
+.section-design {
   background: url(../image/design.png) no-repeat;
   background-size: cover;
 }
 
-.image_design {
+.section-design__image {
   display: inline-block;
   position: relative;
   left: 50%;
   bottom: 0px;
   transform: translateX(-50%);
-  width: 69%;
+  width: 57%;
   max-height: 100%;
-  margin-bottom: 3.56rem;
+  margin-bottom: 3.175rem;
 }
 
 .image_design_under {
   position: relative;
   width: 100%;
   z-index: 2;
-  overflow: hidden;
 }
 
-.image_design_under img {
+.section-design__image-under img {
   width: 100%;
   object-fit: cover;
 }
 
-.image_design_in {
+.section-design__image-in {
   position: absolute;
   width: 94%;
   top: 5%;
@@ -417,117 +427,215 @@ button {
   z-index: 1;
 }
 
-.image_design_in img {
+.section-design__image-in img {
   width: 100%;
   object-fit: cover;
 }
 
-.image_design_mobile {
+.section-design__image-mobile {
   position: absolute;
   width: 100%;
-  top: 42%;
+  top: 41%;
   left: 77%;
   z-index: 3;
 }
 
-.image_design_mobile img {
+.section-design__image-mobile img {
   width: 29%;
   object-fit: cover;
 }
 
-.wtatwedo__content {
+/* -------- SECTION WHAT WE DO--------- */
+
+.section-service__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap:1.875rem;  
+  padding-bottom: 7.25rem;
 }
 
-.wtatwedo__photo {
-  flex-basis: 48.7%;
+.service-photo {
+  flex: 1;
+  height: 30.188rem;
 }
 
-.wtatwedo__menu {
-  flex-basis: 48.7%;
-}
-
-.wtatwedo__photo img {
-  object-fit: cover;
-  width: 100%;
-}
-
-.wtatwedo__menuitem {
+.service-menu { 
   display: flex;
-  padding: 1.375rem;
-  border: 1px solid #c6cbcd;
-  margin-top: 1.375rem;
+  flex-direction: column; 
+  justify-content: space-between;
+  gap: 1.275rem; 
+  flex: 1;
+  height: 100%; 
+  
 }
 
-.wtatwedo__menuitem:first-child {
+.service-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-menu__item {
+  display: flex;
+  padding: 1.575rem;
+  border: 1px solid #c6cbcd;
+  position: relative;
+  }
+
+.service-menu__item h3{
+display: flex;
+align-items: center;
+}
+
+.service-menu__item:first-child {
   margin-top: 0;
 }
 
-.wtatwedo__menuicon {
-  padding-right: 3rem;
+.service-menu__icon {
+  padding-right: 2.688rem;
 }
 
-.wtatwedo__menutext {
+.service-menu__text {
   border: 1px solid #c6cbcd;
   border-top: none;
-  padding: 1.375rem 5.3rem 1.375rem 1.375rem;
+  padding: 1.125rem 1.125rem 1.125rem 1.125rem;
   max-height: 10rem;
   overflow: auto;
 }
 
-.quote__wrap {
-  background: #f8f8f8;
-  margin-top: 7.125rem;
+.service-menu__item::after{
+  content: url(../image/menu_arrow.svg);
+  position: absolute;
+  right: 1.25rem;
+  top:50%;
+  transform: translateY(-50%);
 }
-.wtatwedo__quote {
+
+.service-menu__item:first-child::after {
+  transform-origin: 0 25%;
+  transform: scaleY(-1);      
+}
+
+.quote {
+  background: #f8f8f8;
+  padding: 1.75rem 0;
+}
+
+.quote__content {
   display: flex;
-  justify-content: space-between;
-  padding: 2rem 0;
+  position: relative;
+  justify-content: space-between; 
+  padding: 0 5.313rem 0 6.25rem; 
+}
+
+.quote__content::before {
+  content: url(../image/slider_arrow.svg);
+  position: absolute;
+  left:2.125rem;
+  top:50%;
+  transform: scaleX(-1) translateY(-50%);  
+}
+
+.quote__content::after {
+  content: url(../image/slider_arrow.svg);
+  position: absolute;
+  right: 2.125rem;
+  top:50%;
+  transform: translateY(-50%);  
 }
 
 .quote__image {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-right: 2rem;
+  margin-right: 1.875rem;  
+  min-width: 10.626rem;
+  height: 10.626rem;
 }
 
-.quote__imagein {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 50%;
-  transform: translateY(-50%);
+.quote__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .quote__text {
   font-family: Raleway;
   font-style: italic;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;  
 }
 
 .quote__name {
-  padding-top: 2rem;
-  text-align: start;
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 7.875rem;
+  text-align: start; 
+}
+
+.quote__name::before {
+  content: "";
+  position: absolute;
+  height: 0.25rem;
+  width: 4.375rem;
+  background: #F38281;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ------------SECTION MEET OUR TEAM-------------- */
+
+.team {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap:1.875rem;
+padding-bottom: 5.25rem;
+}
+
+.team__item{
+position: relative;
 }
 
 .icon_social {
   display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
-.text_h4 {
+.team__item-empty{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.team__item-empty:hover {
+  bottom: 1rem;
+  right: 1rem;
+  opacity: 1;
+}
+
+.text__h4 {
   text-transform: uppercase;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.31rem;
   text-align: center;
   vertical-align: middle;
+}
+
+.team__name_padding{
+padding: 2.25rem 0;
 }
 
 .text_center {
@@ -552,14 +660,47 @@ button {
   object-fit: cover;
 }
 
+/* -----------SECTION SOME OF OUR WORK------------- */
+
 .gallery {
   display: grid;
-  /*grid-template: repeat (4,1fr)/repeat (2,1fr);*/
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .gallery__item {
+  position: relative;
+}
+
+.gallery__empty-item{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+height: 100%;
+width: 100%;
+bottom: 0;
+right: 0;
+background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+opacity: 0;
+transition: all 0.4s ease;
+}
+
+.gallery__empty-item div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gallery__empty-item_h3_position{
+padding: 4.5rem 0 1.125rem 0;
+}
+.gallery__empty-item:hover {
+   opacity: 1;
+}
+
+.gallery__empty-item img{
+max-width: 2.25rem;
 }
 
 .gallery__item3 {
@@ -571,21 +712,21 @@ button {
   height: 100%;
 }
 
-.quote_background {
-  background: #fff;
+.quote_paddind{
+padding: 5.25rem 0;
 }
 
-.image_radius {
-  border-radius: 100%;
-}
 
-.section_people {
+/* -------- SECTION WHAT PEOPLE SAY---------- */
+
+.section__people {
   background: url(../image/peple_background.png);
-  background-size: cover;
+  background-size: cover;  
 }
 
-.section_wrap {
+.section__wrap {
   background: rgba(255, 255, 255, 0.9);
+  padding-bottom: 3rem;
 }
 
 .text_left {
@@ -594,53 +735,52 @@ button {
 
 .people {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: 3.188rem;
+  column-gap: 1.125rem;
 }
 
-.people_item {
+.people__item {
+  flex-basis: calc(98%/2); 
   display: flex;
+  justify-content: space-between;   
 }
 
-.people_wrap {
-  max-width: 48.67%;
-  /* flex-grow: 1; */
+.people__content{
+  position: relative;
 }
 
-.people_item {
+.people__content::before{
+  content: "";
+  position: absolute;
+  height: 0.25rem;
+  width: 4.375rem;
+  background: #F38281;
+  left: 0;
+  top: 5.125rem;  
 }
 
-.people_img {
-  padding: 0.5rem 3.125rem 0 1.313rem;
+.people__img {
+  border-radius: 100%;
+  min-width: 8.125rem;
+  min-height: 8.125rem;
+  margin: 0 1.313rem 0 0.5rem;
+}
+
+.people__img img{
+  width: 100%; 
+  object-fit: cover;
 }
 
 .text_padding {
   padding: 0 3.375rem 0 0;
 }
 
-.people_item h4 {
-  padding: 1.125rem 0 1.75rem 0;
+.people__item h4 {
+  padding: 1.125rem 0 5.375rem 0;
 }
 
-@media (max-width: 1024px) {
-  * {
-    font-size: 70%;
-  }
-
-  .vector img {
-    max-height: 3.5rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .people {
-    flex-direction: column;
-  }
-
-  .people_wrap {
-    max-width: 100%;
-  }
-}
 /* ---------------- LATEST BLOG---------------------- */
 
 .latest-blog {
@@ -651,12 +791,12 @@ button {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  column-gap: 1rem;
+  column-gap: 1.5rem;
 }
 
 .latest-gallery__item {
-  max-width: 31.5%;
-}
+  flex: 1;
+  }
 
 .latest-gallery__image-wrap {
   position: relative;
@@ -680,7 +820,7 @@ button {
   width: 21.62%;
   height: 31.62%;
   top: 58.5%;
-  left: -3.78%;
+  left: -3.5%;
   background: rgba(149, 225, 211, 0.97);
 }
 
@@ -760,4 +900,26 @@ button {
   text-align: center;
   padding: 1.25rem 0;
   border: 1px solid #c6cbcd;
+}
+
+
+
+@media (max-width: 1024px) {
+  * {
+    font-size: 70%;
+  }
+
+  .vector img {
+    max-height: 3.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .people {
+    flex-direction: column;
+  }
+
+  .people__wrap {
+    max-width: 100%;
+  }
 }
