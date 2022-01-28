@@ -3,3 +3,150 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 375px;
+  max-height: 100vh;
+  padding: 45px 38px 30px;
+  font-family: Roboto;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.wrapper a {
+  color: #e70b89;
+}
+
+.wrapper-logo {
+  margin-bottom: 95px;
+  text-align: center;
+}
+
+.form-title {
+  margin-bottom: 40px;
+}
+
+.form-title h2 {
+  margin-bottom: 5px;
+  font-size: 49px;
+  line-height: 57px;
+}
+
+.form-title p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.wrapper-form {
+  margin-bottom: 65px;
+}
+
+.form-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-item:last-of-type {
+  margin-bottom: 18px;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 14px 24px 16px;
+  border: 1px solid currentColor;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.form-item input ::placeholder {
+  color: rgba(26, 26, 26, 0.56);
+}
+
+.form-item button {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.form-content > a {
+  align-self: flex-end;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.form-content > button {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #e70b89;
+  text-transform: uppercase;
+}
+
+.form-btn {
+  padding: 16px;
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.form-btn {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__buttons button:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.form-btn_blue {
+  background: #3b5998;
+}
+
+.form-btn_orange {
+  background: #fd8c00;
+}
+
+.form__buttons > * {
+  flex: 1;
+}
+
+.form__buttons p {
+  flex-basis: 100%;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.form__buttons a {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.wrapper-footer {
+  font-size: 12px;
+  line-height: 14px;
+}
