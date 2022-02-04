@@ -646,6 +646,16 @@ padding-bottom: 5.6rem;
   z-index: 9999;
 }
 
+.icon_social svg:hover rect{
+  fill:#F38281;
+  }
+
+.icon_social svg:hover path{
+  fill:#F9EFCF;
+  }
+
+
+
 .team__item-empty {
   position: absolute;
   width: 100%;
