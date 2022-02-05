@@ -518,7 +518,14 @@ button {
 }
 
 .service-menu__icon {
-  padding-right: 2.688rem;
+  margin-right: 2.688rem;
+  max-width: 2.3rem;
+  width: 100%;
+}
+
+.service-menu__icon img{ 
+  width: 100%;
+  object-fit: cover;  
 }
 
 .service-menu__text {
@@ -1366,10 +1373,12 @@ object-fit: cover;
   }
       
   .service-menu__icon {
-    padding-right: 2.688rem;
+    margin-right: 2.688rem;
+    max-width: 1.93rem;
+    width: 100%;
   }
   
-  .service-menu__text {
+   .service-menu__text {
     padding: 1.125rem 1.125rem 1.125rem 1.125rem;
     max-height: 10.2rem;  
   }
