@@ -10,20 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-      <header>
+      <header id="header">
        
         <div class="content header">
         <div  class="menu header_margin">
         <div>
-            <a href="/"><img src="./image/MoGo.svg" alt="MoGo"></a>
+            <a href="/">
+                <picture>
+                    <source srcset="./image/MoGomobile.svg" type="image/svg+xml" media="(max-width: 768px)">
+                    <source srcset="./image/MoGo_tablet.svg" type="image/svg+xml" media="(max-width: 1024px)">
+                    <img src="./image/MoGo.svg" alt="MoGo">
+                </picture>                
+            </a>
         </div>
             <nav class="menu_nav">
            <ul  class="nav">
-                <li class="menu_hover"><a href="./index.html">about</a></li>
-                <li class="menu_hover"><a href="">service</a></li>
-                <li class="menu_hover"><a href="">work</a></li>
-                <li class="menu_hover"><a href="">blog</a></li>
-                <li class="menu_hover"><a href="">contact</a></li>
+                <li class="menu_hover"><a href="#about">about</a></li>
+                <li class="menu_hover"><a href="#service">service</a></li>
+                <li class="menu_hover"><a href="#work">work</a></li>
+                <li class="menu_hover"><a href="#blog">blog</a></li>
+                <li class="menu_hover"><a href="#contact">contact</a></li>
             </ul>
             <div class="menu_find">
             <div class="menu_find_icon">
@@ -53,7 +59,7 @@
     
     </header>
     <main>
-      <section class="eagle">
+      <section  class="eagle">
         <div class="section-welcome content">
             <p class="section-welcome_italic">Creative Template</p>
             <h1 class="section-welcome_h1">Welcome to MoGo</h1>
@@ -65,7 +71,7 @@
         
         </div>
       </section>
-<section>
+<section id="about">
  <div class="content">
     <div>
         <p class="cursive cursive_padding">What we do</p>
@@ -78,8 +84,12 @@
             <img src="./image/About_0.png" alt="image">   
         <div onclick="location.href='https://google.com';" class="about-image_team">            
             <div >
-                <img src="./image/icons_about.svg" alt="image">
-            </div>
+                <picture>
+                    <source srcset="./image/icons_about_mobile.svg" type="image/svg+xml" media="(max-width: 768px)">
+                    <source srcset="./image/icons_about_tablet.svg" type="image/svg+xml" media="(max-width: 1024px)">
+                    <img src="./image/icons_about.svg" alt="image">
+                </picture>  
+             </div>
             <p>Super team</p>    
         </div>
     </div>
@@ -89,7 +99,11 @@
         <img src="./image/About_1.png" alt="image">
           <div onclick="location.href='https://google.com';" class="about-image_team" >            
         <div>
-             <img src="./image/icons_about.svg" alt="image">       
+            <picture>
+                <source srcset="./image/icons_about_mobile.svg" type="image/svg+xml" media="(max-width: 768px)">
+                <source srcset="./image/icons_about_tablet.svg" type="image/svg+xml" media="(max-width: 1024px)">
+                <img src="./image/icons_about.svg" alt="image">
+            </picture>       
         </div>
         <p>Super team</p>    
     </div>
@@ -98,7 +112,11 @@
         <img src="./image/About_2.png" alt="image"> 
         <div onclick="location.href='https://google.com';" class="about-image_team">            
         <div>
-            <img src="./image/icons_about.svg" alt="image">
+            <picture>
+                <source srcset="./image/icons_about_mobile.svg" type="image/svg+xml" media="(max-width: 768px)">
+                <source srcset="./image/icons_about_tablet.svg" type="image/svg+xml" media="(max-width: 1024px)">
+                <img src="./image/icons_about.svg" alt="image">
+            </picture> 
         </div>
         <p>Super team</p>    
     </div>
@@ -141,7 +159,7 @@
         <div>
             <div class="work-with">
                 <div class="work-with__item work-with__item_padding">
-                <div>
+                <div class="work-with__item-icon">
                     <img src="./image/work_with_1.svg" alt="image">
                 </div>
                 <div class="work-with__text-wrapper">
@@ -150,7 +168,7 @@
                 </div>
             </div>
             <div class="work-with__item work-with__item_padding">
-                <div>
+                <div class="work-with__item-icon">
                     <img src="./image/work_with_2.svg" alt="image">
                 </div>
                 <div class="work-with__text-wrapper">
@@ -159,7 +177,7 @@
                 </div>
             </div>
             <div class="work-with__item work-with__item_padding">
-                <div>
+                <div class="work-with__item-icon">
                     <img src="./image/work_with_3.svg" alt="image">
                 </div>
                 <div class="work-with__text-wrapper">
@@ -168,7 +186,7 @@
                 </div>
             </div>
                 <div class="work-with__item work-with__item_padding">
-                <div>
+                <div class="work-with__item-icon">
                     <img src="./image/work_with_4.svg" alt="image">
                 </div>
                 <div class="work-with__text-wrapper">
@@ -177,7 +195,7 @@
                 </div>
             </div>
             <div class="work-with__item work-with__item_padding">
-                <div>
+                <div class="work-with__item-icon">
                     <img src="./image/work_with_5.svg" alt="image">
                 </div>
                 <div class="work-with__text-wrapper"> 
@@ -186,7 +204,7 @@
                 </div>
             </div>
             <div class="work-with__item work-with__item_padding">
-                <div>
+                <div class="work-with__item-icon">
                     <img src="./image/work_with_6.svg" alt="image">
                 </div>
                 <div class="work-with__text-wrapper">
@@ -203,7 +221,7 @@
 <section class="section-design">
     <div class="content">
         <p class="cursive cursive_padding">For all  devices</p>
-        <h2 class="text_title">unique design</h2>
+        <h2 class="section-design_text-title title_padding">unique design</h2>
     
     <div  class="section-design__image">
         <div class="section-design__image-under">
@@ -220,7 +238,7 @@
 <div>
    </div>
 </section>
-<section>
+<section id="service">
 <div class="section-service content">
     <div>
         <p class="cursive cursive_padding">Service</p>
@@ -418,8 +436,8 @@
 </div>
 </section>
 
-<section>
-        <div class="content section-work_padding">
+<section id="work">
+        <div class="content">
             <p class="cursive cursive_padding">What we do</p>
             <h2 class="text_title">some of our work</h2>
             <p class="text_position">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
@@ -577,7 +595,7 @@
             </div>
             </div>
         </section>
-        <section>
+        <section id="blog">
             <div class="content latest-blog_padding">
             <div>
                 <p class="cursive cursive_padding">Our Stories</p>
@@ -661,11 +679,11 @@
         </section>
        </main>
 
-       <footer>
+       <footer id="contact">
            <div class="footer">
         <div class="footer-wrap content">
         <div class="footer-item footer-item_flex_column footer-item_width-1">
-            <a href="#">  
+            <a class="footer-item_logo" href="#">  
             <svg width="141" height="38" viewBox="0 0 141 38" fill="#C6CBCD" xmlns="http://www.w3.org/2000/svg">
                 <path d="M29.1023 37.4759V15.3048L21.1512 31.4483H16.474L8.52283 15.3048V37.4759H0V0.262069H9.25038L18.8126 19.7076L28.4267 0.262069H37.6252V37.4759H29.1023Z" fill="#C6CBCD"/>
                 <path d="M56.5709 38C53.4528 38 50.8024 37.3361 48.6197 36.0083C46.4717 34.6805 44.826 32.9333 43.6827 30.7669C42.5394 28.6005 41.9678 26.2593 41.9678 23.7435C41.9678 21.1926 42.5394 18.834 43.6827 16.6676C44.826 14.5012 46.489 12.754 48.6717 11.4262C50.8544 10.0984 53.4874 9.43448 56.5709 9.43448C59.6544 9.43448 62.2874 10.0984 64.4701 11.4262C66.6528 12.754 68.3158 14.5012 69.4591 16.6676C70.6024 18.834 71.174 21.1926 71.174 23.7435C71.174 26.2593 70.6024 28.6005 69.4591 30.7669C68.3158 32.9333 66.6528 34.6805 64.4701 36.0083C62.2874 37.3361 59.6544 38 56.5709 38ZM50.4906 23.7435C50.4906 25.8749 51.0622 27.6046 52.2056 28.9324C53.3835 30.2602 54.8386 30.9241 56.5709 30.9241C58.2685 30.9241 59.689 30.2602 60.8323 28.9324C62.0103 27.6046 62.5992 25.8749 62.5992 23.7435C62.5992 21.612 62.0103 19.8823 60.8323 18.5545C59.689 17.2267 58.2685 16.5628 56.5709 16.5628C54.8386 16.5628 53.3835 17.2267 52.2056 18.5545C51.0622 19.8823 50.4906 21.612 50.4906 23.7435Z" fill="#C6CBCD"/>
@@ -676,7 +694,7 @@
                 <p class="footer-item_text-style"> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
                 </p>
-                <p class="footer-item_text-uppercase"> <span><span>15</span>k</span> followers</p>
+                <p class="footer-item_text-uppercase"> <span><span>15</span>k</span>  followers</p>
                 <div class="footer__icons-wrap">
                     <p>Follow Us</p>
                     <div class="footer__icons">
