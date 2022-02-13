@@ -1428,30 +1428,30 @@ padding-bottom: 5.6rem;
 .gallery__item3 {
     grid-row: span 3;
   }
-/* 
-  .gallery__item:nth-last-of-type(2) {
+
+  .gallery__item:nth-of-type(2) {
     order: 6;   
   }
-
-  .gallery__item:nth-last-of-type(3) {
+ 
+  .gallery__item:nth-of-type(3) {
     order: 2;   
   }
 
-  .gallery__item:nth-last-of-type(4) {
+  .gallery__item:nth-of-type(4) {
     order: 5;   
   }
 
-  .gallery__item:nth-last-of-type(5) {
+  .gallery__item:nth-of-type(5) {
     order: 3;   
   }
 
-  .gallery__item:nth-last-of-type(6) {
+  .gallery__item:nth-of-type(6) {
     order: 7;   
   }
-  .gallery__item:nth-last-of-type(7) {
-    order: 0;   
+  .gallery__item:nth-of-type(7) {
+    order: 4;   
   }
-   */
+   
 
 
   
