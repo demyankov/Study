@@ -1262,11 +1262,7 @@ padding-bottom: 5.6rem;
    }   
 }
 @media (max-width: 768px) {
-  /* .section-team_padding {
-    padding-bottom: 5.6rem;
-    } */
-    
-    .team {
+      .team {
       flex-direction: column;
       gap: 2.25rem; 
     }
@@ -1298,13 +1294,12 @@ padding-bottom: 5.6rem;
       bottom: 0;
       right: 0;      
       background: none;
-      opacity: 0;
+      opacity: 1;
     }
 
     .team__item-empty:hover {
       bottom: 0;
-      right: 0;
-      opacity: 1;     
+      right: 0;         
     }
 
     .icon_social a {
@@ -1319,8 +1314,7 @@ padding-bottom: 5.6rem;
     .vector {
       display: flex;
       justify-content: space-between;  
-      row-gap:2rem;    
-      /* padding: 3.875rem 1.93rem; */
+      row-gap:2rem;   
       flex-wrap: wrap;
     }
     
@@ -1422,7 +1416,58 @@ padding-bottom: 5.6rem;
 }
 
 @media (max-width: 768px) {
- 
+  
+  .gallery__empty-item {
+    display: none;    
+  }
+  .gallery {
+     grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+  }
+
+.gallery__item3 {
+    grid-row: span 3;
+  }
+/* 
+  .gallery__item:nth-last-of-type(2) {
+    order: 6;   
+  }
+
+  .gallery__item:nth-last-of-type(3) {
+    order: 2;   
+  }
+
+  .gallery__item:nth-last-of-type(4) {
+    order: 5;   
+  }
+
+  .gallery__item:nth-last-of-type(5) {
+    order: 3;   
+  }
+
+  .gallery__item:nth-last-of-type(6) {
+    order: 7;   
+  }
+  .gallery__item:nth-last-of-type(7) {
+    order: 0;   
+  }
+   */
+
+
+  
+  
+   
+  /*
+  
+  .gallery img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .quote_style {
+    background: none;
+    margin: 5.3rem 0;
+  } */
 }
 /* -------- SECTION WHAT PEOPLE SAY---------- */
 
