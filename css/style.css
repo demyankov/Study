@@ -1102,7 +1102,7 @@ button {
   }
 
   .quote__content {    
-    padding: 0;
+    padding: 0 0 0 1rem;
   }
   
 .quote__name {    
@@ -1110,6 +1110,10 @@ button {
   line-height: 1.625rem;
   }
 
+  .service-menu__item::after {
+    content: url(../image/menu_arrow_mobile.svg);  
+  }
+  
 }
 /* ------------SECTION MEET OUR TEAM-------------- */
 
@@ -1257,6 +1261,85 @@ padding-bottom: 5.6rem;
      max-height: 3rem;  
    }   
 }
+@media (max-width: 768px) {
+  /* .section-team_padding {
+    padding-bottom: 5.6rem;
+    } */
+    
+    .team {
+      flex-direction: column;
+      gap: 2.25rem; 
+    }
+    .team__item-wrap {    
+    width: 100%;
+    }
+
+    .team__item {
+     padding: 0 0 82% 0;
+     max-width: 100%;    
+     overflow: hidden;
+    }
+    
+    .team__item img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+    
+    .icon_social {
+      left: 100%;
+      top: 100%;
+      transform: translate(-100%,-100%);         
+    }
+
+    .team__item-empty {
+      height: 100%;
+      bottom: 0;
+      right: 0;      
+      background: none;
+      opacity: 0;
+    }
+
+    .team__item-empty:hover {
+      bottom: 0;
+      right: 0;
+      opacity: 1;     
+    }
+
+    .icon_social a {
+     max-height: 42px;
+  }
+
+    .icon_social svg {
+      width: 42px;
+      height: 42px;
+  }
+       
+    .vector {
+      display: flex;
+      justify-content: space-between;  
+      row-gap:2rem;    
+      /* padding: 3.875rem 1.93rem; */
+      flex-wrap: wrap;
+    }
+    
+    .vector>div {
+      flex-basis: 50%; 
+      display: flex;
+      justify-content: center;     
+    }
+    
+    .vector>div:nth-of-type(3),
+    .vector>div:nth-of-type(6) {
+      flex: 1;
+      flex-basis: 100%;      
+    }
+
+    .vector img {
+      max-height: 3rem;    
+    } 
+}
 
 /* -----------SECTION SOME OF OUR WORK------------- */
 .gallery {
@@ -1336,6 +1419,10 @@ padding-bottom: 5.6rem;
   .quote_style {   
     margin: 3.6rem 0;
   }
+}
+
+@media (max-width: 768px) {
+ 
 }
 /* -------- SECTION WHAT PEOPLE SAY---------- */
 
