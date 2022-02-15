@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoGo</title>
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap" rel="stylesheet">
 </head>
@@ -53,7 +53,10 @@
                     </button>
             </div>
             </div>
-        </nav>
+            <button class="cmn-toggle-switch cmn-toggle-switch__htx">
+                <span>меню</span>
+              </button>
+        </nav>       
        </div>
 </div>
     
@@ -156,7 +159,7 @@
             <p class="cursive cursive_padding">We work with</p>
             <h2 class="text_title">amazing services</h2>
         </div>
-        <div>
+        <div class="work-with__wrapper">
             <div class="work-with">
                 <div class="work-with__item work-with__item_padding">
                 <div class="work-with__item-icon">
@@ -290,8 +293,14 @@
     </div>  
     <button class="button-arrow__right">
         <img src="./image/slider_arrow.svg" alt="arrow">
-    </button>    
-        
+    </button> 
+    <div class="mobile-slider">
+        <button>circle</button>
+        <button>circle</button>
+        <button>circle</button>
+        <button>circle</button>
+        <button>circle</button>
+    </div>       
 </div>
 </div>
 </section>
@@ -305,8 +314,11 @@
     <div class="team">   
         <div class="team__item-wrap">     
       <div class="team__item">
-        <img src="./image/team1.png" alt="team">
-        <div  class="team__item-empty" >
+        <picture>           
+            <source srcset="./image/team1_tablet.jpg" type="image/svg+xml" media="(max-width: 1024px)">
+            <img src="./image/team1.jpg" alt="image">
+        </picture>
+       <div  class="team__item-empty" >
         <div class="icon_social">
             <a href="https://facebook.com" target="blank">
                 <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
@@ -340,7 +352,10 @@
     </div>
     <div class="team__item-wrap">      
         <div class="team__item">
-          <img src="./image/team2.png" alt="team">
+            <picture>           
+                <source srcset="./image/team2_tablet.jpg" type="image/svg+xml" media="(max-width: 1024px)">
+                <img src="./image/team2.jpg" alt="image">
+            </picture>
           <div  class="team__item-empty" >
           <div class="icon_social">
             <a href="https://facebook.com" target="blank">
@@ -375,7 +390,10 @@
       </div>
       <div class="team__item-wrap">     
         <div class="team__item">
-          <img src="./image/team3.png" alt="team">
+            <picture>           
+                <source srcset="./image/team3_tablet.jpg" type="image/svg+xml" media="(max-width: 1024px)">
+                <img src="./image/team3.jpg" alt="image">
+            </picture>
           <div  class="team__item-empty" >
           <div class="icon_social">
             <a href="https://facebook.com" target="blank">
@@ -469,7 +487,10 @@
       
     <div class="gallery">
         <div class="gallery__item">
-            <img src="./image/gallery_1.png" alt="photo gallery">
+            <picture>                
+                <source srcset="./image/gallery_1_tablet.jpg" type="image/svg+xml" media="(max-width: 1024px)">
+                <img src="./image/gallery_1.jpg" alt="photo gallery">
+            </picture>             
             <div class="gallery__empty-item">
                 <div>
                     <img src="./image/gallery_cap.svg" alt="icon cup">
@@ -479,7 +500,10 @@
             </div>
         </div>
          <div class="gallery__item">
-             <img src="./image/gallery_2.png" alt="photo gallery">
+            <picture>                
+                <source srcset="./image/gallery_2_tablet.jpg" type="image/svg+xml" media="(max-width: 1024px)">
+                <img src="./image/gallery_2.jpg" alt="photo gallery">
+            </picture>   
              <div class="gallery__empty-item">
                 <div>
                     <img src="./image/gallery_cap.svg" alt="icon cup">
@@ -490,7 +514,10 @@
         </div>
             
         <div class="gallery__item gallery__item3">
-             <img src="./image/gallery_3.png" alt="photo gallery">
+            <picture>                
+                <source srcset="./image/gallery_3_tablet.jpg" type="image/svg+xml" media="(max-width: 1024px)">
+                <img src="./image/gallery_3.jpg" alt="photo gallery">
+            </picture>   
              <div class="gallery__empty-item">
                 <div>
                     <img src="./image/gallery_cap.svg" alt="icon cup">
@@ -500,7 +527,10 @@
             </div>
         </div>
         <div class="gallery__item">
-            <img src="./image/gallery_4.png" alt="photo gallery">
+            <picture>                
+                <source srcset="./image/gallery_4_tablet.jpg" type="image/svg+xml" media="(max-width: 1024px)">
+                <img src="./image/gallery_4.jpg" alt="photo gallery">
+            </picture>   
             <div class="gallery__empty-item">
                 <div>
                     <img src="./image/gallery_cap.svg" alt="icon cup">
@@ -510,7 +540,10 @@
             </div>
         </div>
          <div class="gallery__item">
-             <img src="./image/gallery_5.png" alt="photo gallery">
+            <picture>                
+                <source srcset="./image/gallery_5_tablet.jpg" type="image/svg+xml" media="(max-width: 1024px)">
+                <img src="./image/gallery_5.jpg" alt="photo gallery">
+            </picture>   
              <div class="gallery__empty-item">
                 <div>
                     <img src="./image/gallery_cap.svg" alt="icon cup">
@@ -520,7 +553,7 @@
             </div>
             </div>
          <div class="gallery__item">
-             <img src="./image/gallery_6.png" alt="photo gallery">
+             <img src="./image/gallery_6.jpg" alt="photo gallery">
              <div class="gallery__empty-item">
                 <div>
                     <img src="./image/gallery_cap.svg" alt="icon cup">
@@ -530,7 +563,10 @@
             </div>
             </div>
          <div class="gallery__item">
-             <img src="./image/gallery_8.png" alt="photo gallery">
+            <picture>                
+                <source srcset="./image/gallery_7_tablet.jpg" type="image" media="(max-width: 1024px)">
+                <img src="./image/gallery_7.jpg" alt="photo gallery">
+            </picture>   
              <div class="gallery__empty-item">
                 <div>
                     <img src="./image/gallery_cap.svg" alt="icon cup">
@@ -549,19 +585,27 @@
                     <img src="./image/slider_arrow.svg" alt="arrow">
                 </button>
             </div>
-          <div class="quote__image">
+          <div class="quote__image quote_visible">
               <img src="./image/james.png" alt="quote">
           </div>
           <div>
               <blockquote class="quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</blockquote>
-              <p class="cursive quote__name">James Philips</p>        
+              <p class="cursive quote__name">James Philips</p> 
+               
         </div>
-        <div>
+        
+        <div class="mobile-slider">
+            <button>circle</button>
+            <button>circle</button>
+            <button>circle</button>
+            <button>circle</button>
+            <button>circle</button>
+        </div>         
+              <div>
             <button class="button-arrow__right">
                 <img src="./image/slider_arrow.svg" alt="arrow">
             </button>
-        </div>      
-              
+        </div> 
       </div>
       </div>
 
@@ -790,8 +834,8 @@
     </div>
         <p class="footer__copypight content">Copyright © 2021 mogo. All Rights Reserved</p>
     </div>
-
        </footer>
 
+<script src="./js/main.js"></script>
 </body>
 </html>

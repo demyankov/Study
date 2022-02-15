@@ -1,0 +1,5 @@
+body {
+  max-width: 1000px;
+  display: grid;
+  transition: all 0.5s ease;
+  margin: 0; }
