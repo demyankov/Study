@@ -281,16 +281,6 @@ a {
   text-transform: uppercase;
 }
 
-.button-learn a:hover {
-  color: #e4be8d;
-  background: #fff;
-}
-
-.button-learn a:active {
-  background: #fff;
-  border: 0.25rem solid #e4be8d;
-  color: #e4be8d;
-}
 
 @media (max-width: 1024px) { 
      .button-learn_margin {
@@ -323,6 +313,17 @@ a {
 .button-learn a {    
  padding: 0.7rem 5rem;
  font-size: 1.125rem;     
+}
+
+.button-learn a:hover {
+  background: #e4be8d;
+  color: #fff;
+}
+
+.button-learn a:active {
+    border: none;
+  background: #e4be8d;
+  color: #fff;
 }
 }
 
@@ -1379,6 +1380,17 @@ padding-bottom: 5.6rem;
       height: 42px;
   }
        
+  .icon_social svg:hover rect{
+    fill:#F9EFCF;     
+}
+
+.icon_social svg:hover path{ 
+  fill:#F38281;
+}
+
+.icon_social svg:active {
+  transform: scale(1);
+}
     .vector {
       display: flex;
       justify-content: space-between;  
@@ -2183,6 +2195,7 @@ object-fit: cover;
   line-height: 0.9375rem;  
 }
 
+
 .footer__photo-link a:hover{
   font-weight: 700;
 }
@@ -2378,6 +2391,30 @@ object-fit: cover;
     .footer__photo img {
       max-width: 100%;   
     }   
+
+    .footer__icons img:hover {
+      transform: scale(1);
+    }
    
+    .blogs__text h4:hover {
+    transform: scale(1); 
+    }
+  
+  .blogs__image:hover {
+    transform: scale(1);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .footer__photo img:hover {
+    transform: scale(1);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .footer__photo-link a:hover{
+    font-weight: 500;
+  }
 }
+
 
