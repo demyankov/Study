@@ -1,0 +1,214 @@
+@import 'variables.scss';
+
+*{box-sizing: border-box}
+
+.container {
+    display: flex;
+    justify-content: center;  
+    padding: 1rem;  
+}
+
+.todo {    
+    max-width: 45rem;
+    min-width: 28rem;
+    width: 100%;    
+    background-color: $background-base;
+    border: 2px solid #000;
+    border-radius: 1rem;
+
+    p, input, time, button {
+        font-size: $fontsize-base;
+        font-family: sans-serif;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    @media (max-width: 640px) {
+        p, input, time, button {
+            font-size: $fontsize-bp1;          
+        }        
+    }
+
+    input, button {
+        padding: 0.8rem 0.5rem;
+        border: 2px solid #000;
+        border-radius: 0.5rem;
+        text-align: center;        
+    }
+
+    input {
+        flex:1;
+        min-width: 7rem;  
+        outline: none;
+    }
+
+    @media (max-width: 640px) {
+        input, button {
+            padding: 0.5rem 0.3rem;            
+        }
+
+        input {            
+            min-width: 4rem;  
+        }       
+    }
+    
+    input::placeholder {
+        color: rgb(224, 220, 220);            
+    }
+
+    .todo-form {        
+        margin: 2rem;       
+
+        &_button-add {
+            padding: 0.8rem 2rem;         
+        }    
+
+        button {                   
+            background-color: $background-button;
+            cursor: pointer;
+        }
+
+        button:hover {                   
+            background-color: $background-button-hover;
+        }
+
+        button:active {                   
+            background-color: $background-button-active;
+            color: $fontcolor-button-active;
+            border-color: $bordercolor-button-active;
+        }
+
+        &_header {
+            display: flex;
+            justify-content: space-between; 
+            flex-wrap: nowrap;
+            gap: 1rem;
+        }
+    
+        &_show {
+            display: flex;
+            justify-content: space-between; 
+            flex-wrap: nowrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        &_task-container {  
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            gap: 2rem;
+            margin-top: 2rem; 
+        }   
+
+        &_task {  
+            padding: 0.5rem;;    
+            width: 70%;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 1rem;
+            border: 2px solid #000;
+            border-radius: 0.5rem;            
+
+        }  
+
+        &_task-right {           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: end; 
+            flex-wrap: nowrap;
+            gap: 2rem;            
+        } 
+        
+        &_task-close {
+            padding: 0.3rem 0.8rem; 
+        }
+
+        &_task-date {   
+            // display: block;  
+            padding: 0.5rem 2rem; 
+             border-radius: 0.5rem;
+             background-color: #fff;
+             text-align: center;
+        }
+
+        &_task-input {   
+            flex: 1;
+            border: none;             
+        }
+
+        @media (max-width: 640px) {
+            margin: 1.5rem;       
+
+        &_button-add {
+            padding: 0.5rem 1.4rem;         
+        }    
+        
+        &_header {
+            gap: 0.8rem;
+        }
+    
+        &_show {           
+            gap: 0.8rem;
+            margin-top: 0.8rem;
+        }
+
+        &_task-container {          
+            gap: 1.5rem;
+            margin-top: 1.5rem; 
+        }   
+
+        &_task {  
+            padding: 0.3rem;;    
+            width: 100%;            
+            gap: 0.8rem;
+        }  
+
+        &_task-right {   
+            gap: 1.5rem;            
+        } 
+        
+        &_task-close {
+            padding: 0.25rem 0.5rem; 
+        }
+
+        &_task-date {  
+            padding: 0.35rem 1.5rem;            
+        }
+        }
+        
+        .todo-form_task-checkbox {   
+            flex: 0;
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+        
+        .todo-form_task-input::placeholder, time {   
+           color: rgb(119, 118, 118);
+        }
+
+        &_task-checkbox+label {
+            position: relative;
+            padding: 0.8rem 1rem;             
+            border-radius: 0.5rem;
+            border: 2px solid #000; 
+            background-color: $background-button;             
+        }
+
+        &_task-checkbox+label::before {
+            content: url(../images/icons-checkbox.svg);
+            width: 60%;
+            height: 60%;  
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);          
+        }
+    }   
+}
+

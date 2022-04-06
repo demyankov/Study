@@ -1,0 +1,277 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.todo {
+  max-width: 45rem;
+  min-width: 28rem;
+  width: 100%;
+  background-color: #d4d4d4;
+  border: 2px solid #000;
+  border-radius: 1rem;
+}
+
+.todo p, .todo input, .todo time, .todo button {
+  font-size: 1rem;
+  font-family: sans-serif;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .todo p, .todo input, .todo time, .todo button {
+    font-size: 0.8rem;
+  }
+}
+
+.todo input, .todo button {
+  padding: 0.8rem 0.5rem;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.todo input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 7rem;
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  .todo input, .todo button {
+    padding: 0.5rem 0.3rem;
+  }
+  .todo input {
+    min-width: 4rem;
+  }
+}
+
+.todo input::-webkit-input-placeholder {
+  color: #e0dcdc;
+}
+
+.todo input:-ms-input-placeholder {
+  color: #e0dcdc;
+}
+
+.todo input::-ms-input-placeholder {
+  color: #e0dcdc;
+}
+
+.todo input::placeholder {
+  color: #e0dcdc;
+}
+
+.todo .todo-form {
+  margin: 2rem;
+}
+
+.todo .todo-form_button-add {
+  padding: 0.8rem 2rem;
+}
+
+.todo .todo-form button {
+  background-color: #23e9cf;
+  cursor: pointer;
+}
+
+.todo .todo-form button:hover {
+  background-color: #1cbba6;
+}
+
+.todo .todo-form button:active {
+  background-color: #2b3332;
+  color: #eff0f0;
+  border-color: #4bec94;
+}
+
+.todo .todo-form_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.todo .todo-form_show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.todo .todo-form_task-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.todo .todo-form_task {
+  padding: 0.5rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 1rem;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+}
+
+.todo .todo-form_task-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.todo .todo-form_task-close {
+  padding: 0.3rem 0.8rem;
+}
+
+.todo .todo-form_task-date {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.todo .todo-form_task-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+}
+
+@media (max-width: 640px) {
+  .todo .todo-form {
+    margin: 1.5rem;
+  }
+  .todo .todo-form_button-add {
+    padding: 0.5rem 1.4rem;
+  }
+  .todo .todo-form_header {
+    gap: 0.8rem;
+  }
+  .todo .todo-form_show {
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+  }
+  .todo .todo-form_task-container {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .todo .todo-form_task {
+    padding: 0.3rem;
+    width: 100%;
+    gap: 0.8rem;
+  }
+  .todo .todo-form_task-right {
+    gap: 1.5rem;
+  }
+  .todo .todo-form_task-close {
+    padding: 0.25rem 0.5rem;
+  }
+  .todo .todo-form_task-date {
+    padding: 0.35rem 1.5rem;
+  }
+}
+
+.todo .todo-form .todo-form_task-checkbox {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.todo .todo-form .todo-form_task-input::-webkit-input-placeholder, .todo .todo-form time {
+  color: #777676;
+}
+
+.todo .todo-form .todo-form_task-input:-ms-input-placeholder, .todo .todo-form time {
+  color: #777676;
+}
+
+.todo .todo-form .todo-form_task-input::-ms-input-placeholder, .todo .todo-form time {
+  color: #777676;
+}
+
+.todo .todo-form .todo-form_task-input::placeholder, .todo .todo-form time {
+  color: #777676;
+}
+
+.todo .todo-form_task-checkbox + label {
+  position: relative;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #000;
+  background-color: #23e9cf;
+}
+
+.todo .todo-form_task-checkbox + label::before {
+  content: url(../images/icons-checkbox.svg);
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=styles.css.map */
